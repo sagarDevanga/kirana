@@ -1,26 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Switch, Route } from 'react-router-dom';
+import Landing from './containers/landing/Landing';
+import Authenticate from './containers/authentication/Authenticate';
+import Profile from './containers/profile/Profile';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  return(
+    <Switch>
+      <Route path="/authenticate" exact component={Authenticate}/>
+      <Route path="/profile" exact component={Profile}/>
+      <Route path="/" exact component={Landing}/>
+    </Switch>
+
+  )
 }
 
 export default App;
