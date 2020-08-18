@@ -6,7 +6,7 @@ const login = (props) => {
 
         <div>
             <input type="email" />
-            <input type="submit" text="LOGIN" />
+            <button>LOGIN</button>
         </div>
     )
 }

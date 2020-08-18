@@ -6,7 +6,7 @@ const register = (props) => {
 
         <div>
             <input type="email" />
-            <input type="submit" text="REGISTER" />
+            <button>REGISTER</button>
         </div>
     )
 }
