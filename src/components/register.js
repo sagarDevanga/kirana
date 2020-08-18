@@ -1,8 +1,14 @@
 import React from 'react'
 
-const register = (props)=>{
+const register = (props) => {
 
-    return <h1>REGISTER</h1>
+    return (
+
+        <div>
+            <input type="email" />
+            <input type="submit" text="REGISTER" />
+        </div>
+    )
 }
 
 export default register

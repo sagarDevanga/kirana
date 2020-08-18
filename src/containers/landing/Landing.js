@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
+import Header from '../../components/header'
 import ItemList from '../../components/itemlist'
 
-class Landing extends Component{
+class Landing extends Component {
 
-    render()
-    {
-        return <h1>YOU ARE ON LANDING PAGE</h1>    
+    render() {
+        return (
+            <div>
+                <Header/>
+                <ItemList/>
+            </div>
+        )
     }
 }
 
 export default Landing
-
-// will have a tabs to render the componets
-            //<ItemList/>

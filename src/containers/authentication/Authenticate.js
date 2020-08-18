@@ -1,15 +1,20 @@
 import React, { Component } from 'react'
+import Login from '../../components/login'
+import Register from '../../components/register'
 
 class Authenticate extends Component{
 
     render()
     {
-        return <h1>YOU ARE ON AUTHENTICATION PAGE</h1>
+        return (
+
+            <div>
+                <Login/>
+                <Register/>
+            </div>
+
+        )
     }
 }
 
 export default Authenticate
-
-// will have a tabs to render the componets
-            // <Login/>
-            // <Register/> 
